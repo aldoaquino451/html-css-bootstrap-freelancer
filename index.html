@@ -25,12 +25,29 @@
 <header>
 
   <!-- TOPBAR MENU  -->
-  <section class="container">
-    <div class="row h-100">
-      <div class="col">logo</div>
-      <div class="col d-lg-none">hambrger</div>
-      <div class="col d-none d-lg-block">menu</div>
+  <section id="topbar" class="aa-darkblue">
+    <div class="container">
+      <div class="row h-100">
+
+        <div class="col text-uppercase d-flex align-items-center">
+          <a href="#">start bootstrap</a>
+        </div>
+        <div class="col d-flex align-items-center justify-content-end">
+          <nav class="d-md-none">
+            <i class="fa-solid fa-bars"></i>
+          </nav>
+          <nav class="d-none d-md-block text-uppercase">
+            <ul class="d-flex gap-2">
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+      </div>
     </div>
+
   </section>
   <!-- // TOPBAR MENU  -->
 
@@ -40,14 +57,13 @@
 <main>
 
   <!-- JUMBOTRON  -->
-  <section id="jumbotron" class="container-aa-lg">
-    <div class="container-fluid">
-      <div class="row row-cols-1">
-        <div class="col">immagine</div>
-        <div class="col">titolo</div>
-        <div class="col">disegno</div>
-        <div class="col">testo</div>
-      </div>
+  <section id="aa-jumbotron" class="aa-green">
+
+    <div class="content d-flex flex-column align-items-center">
+      <div>immagine</div>
+      <div>testo</div>
+      <div class="star">STAR</div>
+      <div>testo</div>
     </div>
 
   </section>
@@ -55,54 +71,41 @@
 
 
   <!-- PORTFOLIO  -->
-  <section id="portfolio">
+  <section id="portfolio" class="my-5">
+    
+    <div class="container section-top text-center text-uppercase">
+      <h2>portfolio</h2>
+      <div class="star">star</div>
+    </div>
+    
     <div class="container">
-      <div class="row row-cols-1">
-
-        <div class="col">
-          <div class="row row-cols-1">
-            <div class="col">testo</div>
-            <div class="col">disegno</div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-          </div>
-        </div>
-
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
       </div>
+
     </div>
   </section>
   <!-- // PORTFOLIO  -->
 
 
   <!-- ABOUT  -->
-  <section id="about">
-    <div class="container-aa-sm">
+  <section id="about" class="aa-green my-5">
+
+    <div class="container section-top text-center text-uppercase">
+      <h2>about</h2>
+      <div class="star">star</div>
+    </div>
+
+    <div class="aa-container-sm">
       <div class="container-fluid">
-        <div class="row row-cols-1">
-  
-          <div class="col">
-            <div class="row row-cols-1">
-              <div class="col">1</div>
-              <div class="col">2</div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="row row-cols-1 row-cols-md-2">
-              <div class="col">1</div>
-              <div class="col">2</div>
-            </div>
-          </div>
-  
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta natus ab commodi. Reiciendis beatae nisi, molestias error voluptatibus quibusdam debitis labore dolor. Reprehenderit exercitationem ratione omnis placeat quod quas sed?</div>
+          <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero et quo facilis, inventore optio tempore laudantium? Quod recusandae aliquam excepturi alias odio iure repellat corporis! Earum laudantium ex sunt facere.</div>
         </div>
       </div>
     </div>
@@ -111,15 +114,17 @@
 
 
   <!-- CONTACT ME -->
-  <section id="contact">
-    <div class="container-aa-sm">
+  <section id="contact" class="my-5">
+
+    <div class="container section-top text-center text-uppercase">
+      <h2>about</h2>
+      <div class="star">star</div>
+    </div>
+
+    <div class="aa-container-sm">
       <div class="container-fluid">
         <div class="row row-cols-1">
-
-          <div class="col">1</div>
-          <div class="col">2</div>
-          <div class="col">3</div>
-  
+          form
         </div>
       </div>
     </div>
@@ -132,13 +137,13 @@
 <footer>
 
   <!-- INFORMATION  -->
-  <section id="footer-top">
+  <section id="footer-top" class="aa-lightblue">
     <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-lg-3">
+      <div class="row row-cols-1 row-cols-md-3">
 
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
+        <div class="col">left</div>
+        <div class="col">center</div>
+        <div class="col">right</div>
 
       </div>
     </div>
@@ -146,7 +151,7 @@
 
 
   <!-- COPYRIGHT -->
-  <section id="footer-bottom">
+  <section id="footer-bottom" class="aa-darkblue">
     <div class="container-fluid">
       <div class="row">
 
