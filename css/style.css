@@ -13,18 +13,39 @@ a {
   color: white;
 }
 
-[class^="container"],
-[class^="col"],
-.section-top {
-  min-height: 100px;
-  border: 1px solid black;
+button i {
+  font-size: 26px;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 4px ;
+  color: white;
+  opacity: 0.5;
 }
 
+/* star  */
+
+.star-bar {
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* header  */
+
+#aa-jumbotron .image {
+  width: 200px;
+}
+
+#aa-jumbotron .image img {
+  width: 100%;
+}
+
+/* main  */
 
 
 
-
-
+/* container  */
 
 .aa-container-lg {
   width: 90%;
@@ -39,6 +60,9 @@ a {
   margin: 0 auto;
 }
 
+
+/* color  */
+
 .aa-green {
   background-color: #1abc9c;
 }
@@ -52,16 +76,28 @@ a {
 }
 
 
+/* debugn */
 
-
+[class^="container"],
+[class^="col"],
+.section-top {
+  min-height: 100px;
+  border: 1px solid black;
+}
 
 
 .hidden {
   display: none;
 }
 
-.db-sm {
-  height: 100px;
-  background-color: lightslategray;
-  border: 1px solid black;
-}
+
+/* media query  */
+
+/* 
+@media screen and (min-width:768px) {
+  
+  body {
+    font-size: 18px;
+  }
+
+} */
