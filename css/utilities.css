@@ -1,0 +1,64 @@
+/*------------------
+    UTILITIES
+-----------------*/
+
+/* COLORS  */
+
+.a-bg-green {
+  background-color: var(--color-green);
+}
+
+.a-bg-light {
+  background-color: var(--color-light);
+}
+
+.a-bg-dark {
+  background-color: var(--color-dark);
+}
+
+.a-text-dark {
+  color: var(--color-dark);
+}
+
+/* CONTAINERS  */
+
+.a-container-lg {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.a-container-sm {
+  width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* OBJECTS : star */
+
+.star::after,
+.star::before {
+  content: '';
+  width: 20%;
+  height: 4px;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: var(--color-white);
+}
+
+.star.dark::after,
+.star.dark::before {
+  background-color: var(--color-dark);
+}
+
+.star i {
+  font-size: 34px;
+}
+
+/* OBJECTS : card */
+
+.card_a.red img {
+  width: 100%;
+}
+

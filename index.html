@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous"/>
 
   <!-- css style  -->
+  <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaquery.css">
 
   <!-- title  -->
   <title>Bootstrap Freelancer</title>
@@ -28,23 +30,23 @@
 <header>
 
   <!-- TOPBAR MENU  -->
-  <section id="topbar" class="aa-darkblue">
-    <div class="container">
-      <div class="row h-100">
+  <section id="topbar" class="a-bg-dark">
+    <div class="container h-100">
+      <div class="row h-100 text-uppercase">
 
-        <div class="col d-flex align-items-center">
-          <a class="text-uppercase fw-bold fs-6" href="#">start bootstrap</a>
+        <div class="col d-flex align-items-center fw-bolder fs-5">
+          <a href="#">start bootstrap</a>
         </div>
 
-        <div class="col d-flex align-items-center justify-content-end">
+        <div class="col d-flex justify-content-end align-items-center fw-bold fs-6">
 
           <nav class="d-md-none">
-            <button class="btn">
+            <button>
               <i class="fa-solid fa-bars"></i>
             </button>
           </nav>
 
-          <nav class="d-none d-md-block text-uppercase">
+          <nav class="d-none d-md-block">           
             <ul class="d-flex gap-2">
               <li><a href="#">portfolio</a></li>
               <li><a href="#">about</a></li>
@@ -66,88 +68,181 @@
 <main>
 
   <!-- JUMBOTRON  -->
-  <section id="aa-jumbotron" class="aa-green py-3 text-center">
-
-    <div class="content d-flex flex-column align-items-center">
-
-      <div class="image">
-        <img src="./img/avatar.svg" alt="avatar">
+  <section id="a-jumbotron" class="py-3 text-center  text-uppercase a-bg-green">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-12 mb-3">
+          <div class="image d-inline-block">
+            <img class="img-fluid" src="./img/avatar.svg" alt="avatar">
+          </div>
+        </div>
+  
+        <div class="col-12 mb-3">
+          <h1>start bootstrap</h1>
+        </div>
+        
+        <div class="col-12 mb-3">
+          <div class="star d-flex align-items-center justify-content-center ">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+        
+        <div class="col-12 mb-2">
+          <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
+        </div>
+  
       </div>
-
-      <h1 class="my-3 text-uppercase fw-bold">start bootstrap</h1>
-
-      <div class="star my-3 d-flex align-items-center gap-2">
-        <div class="star-bar"></div>
-        <i class="fa-solid fa-star fs-1"></i>
-        <div class="star-bar"></div>
-      </div>
-
-      <h3 class="fs-6">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3>
-
-    </div>
-
+    </div>  
   </section>
   <!-- // JUMBOTRON  -->
 
 
   <!-- PORTFOLIO  -->
-  <section id="portfolio" class="my-5">
+  <section id="portfolio" class="py-3 a-text-dark">
     
-    <div class="container section-top text-center text-uppercase">
-      <h2>portfolio</h2>
-      <div class="star">star</div>
+    <div class="container pt-3 text-uppercase text-center">
+      <div class="row">
+
+        <div class="col-12 mb-3">
+          <h2>start bootstrap</h2>
+        </div>
+        
+        <div class="col-12 mb-3">
+          <div class="star dark d-flex align-items-center justify-content-center ">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+      </div>
     </div>
     
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
-        <div class="col">4</div>
-        <div class="col">5</div>
-        <div class="col">6</div>
-      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img/cabin.png" alt="cabin">
+        </div>
+
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img/cake.png" alt="cake">
+        </div>
+
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img//circus.png" alt="circus">
+        </div>
+
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img/game.png" alt="game">
+        </div>
+
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img/safe.png" alt="safe">
+        </div>
+
+        <div class="a-card col my-3">
+          <img class="img-fluid" src="./img/submarine.png" alt="submarine">
+        </div>
+
+      </div>
     </div>
+
   </section>
   <!-- // PORTFOLIO  -->
 
 
   <!-- ABOUT  -->
-  <section id="about" class="aa-green my-5">
+  <section id="about" class="py-3 a-bg-green">
 
-    <div class="container section-top text-center text-uppercase">
-      <h2>about</h2>
-      <div class="star">star</div>
+    <div class="container pt-3 text-uppercase text-center">
+      <div class="row">
+
+        <div class="col-12 mb-3">
+          <h2>about</h2>
+        </div>
+        
+        <div class="col-12 mb-3">
+          <div class="star d-flex align-items-center justify-content-center ">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="aa-container-sm">
+    <div class="a-container-sm">
       <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2">
-          <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta natus ab commodi. Reiciendis beatae nisi, molestias error voluptatibus quibusdam debitis labore dolor. Reprehenderit exercitationem ratione omnis placeat quod quas sed?</div>
-          <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero et quo facilis, inventore optio tempore laudantium? Quod recusandae aliquam excepturi alias odio iure repellat corporis! Earum laudantium ex sunt facere.</div>
+
+          <div class="col mb-3">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta natus ab commodi. Reiciendis beatae nisi, molestias error voluptatibus quibusdam debitis labore dolor. Reprehenderit exercitationem ratione omnis placeat quod quas sed?</p>
+          </div>
+
+          <div class="col mb-3">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero et quo facilis, inventore optio tempore laudantium? Quod recusandae aliquam excepturi alias odio iure repellat corporis! Earum laudantium ex sunt facere.</p>
+          </div>
+
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 text-center mb-3">
+          <a class="btn btn-dark a-btn-download d-inline-block" href="#">
+            <i class="fa-solid fa-download"></i>
+            <span class="text-capitalize">download</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
   </section>
   <!-- // ABOUT  -->
 
 
   <!-- CONTACT ME -->
-  <section id="contact" class="my-5">
+  <section id="contact" class="py-3 a-text-dark">
 
-    <div class="container section-top text-center text-uppercase">
-      <h2>about</h2>
-      <div class="star">star</div>
-    </div>
+    <div class="container pt-3 text-uppercase text-center">
+      <div class="row">
 
-    <div class="aa-container-sm">
-      <div class="container-fluid">
-        <div class="row row-cols-1">
-          form
+        <div class="col-12 mb-3">
+          <h2>contact me</h2>
         </div>
+        
+        <div class="col-12 mb-3">
+          <div class="star dark d-flex align-items-center justify-content-center ">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <div class="a-container-sm mb-5">
+      <div class="row">
+
+        <div class="col">
+          
+          <form action="#" method="post">
+
+            <input type="text" class="form-control a-form-control" id="name" name="name" placeholder="Name">
+            <input type="text" class="form-control a-form-control" id="email" name="email" placeholder="Email Address">
+            <input type="text" class="form-control a-form-control" id="number" name="number" placeholder="Phone Number">
+            <textarea name="textarea" class="form-control a-form-control" id="message" rows="5" placeholder="Message"></textarea>
+            <button class="a-btn-form btn btn-primary mt-2" type="submit">Send</button>
+
+
+          </form>
+          
+        </div>
+
+      </div>
+    </div>
+
   </section>
   <!-- // CONTACT ME -->
 
@@ -157,13 +252,38 @@
 <footer>
 
   <!-- INFORMATION  -->
-  <section id="footer-top" class="aa-lightblue">
-    <div class="container-fluid">
+  <section class="a-bg-light py-3">
+    <div class="container-fluid text-center">
       <div class="row row-cols-1 row-cols-md-3">
 
-        <div class="col">left</div>
-        <div class="col">center</div>
-        <div class="col">right</div>
+        <div class="col my-3 d-flex align-items-center">
+          <p class="text-center">LOCATION 2215 John Daniel Drive Clark, MO 54243</p>
+        </div>
+
+        <div class="col my-3 d-flex flex-column justify-content-center align-items-center">
+
+          <p class="text-uppercase">around the web</p>
+
+          <div class="d-flex gap-2">
+            <div class="circle">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="circle">
+              <i class="fa-brands fa-google-plus-g"></i>     
+            </div>
+            <div class="circle">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="circle">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-3 d-flex flex-column align-items-center justify-content-center">
+          <p class="text-uppercase mb-0">about freelance</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus maiores</p>
+        </div>
 
       </div>
     </div>
@@ -171,11 +291,13 @@
 
 
   <!-- COPYRIGHT -->
-  <section id="footer-bottom" class="aa-darkblue">
-    <div class="container-fluid">
+  <section class="a-bg-dark py-3">
+    <div class="container-fluid text-center">
       <div class="row">
 
-        <div class="col">copy</div>
+        <div class="col-12">
+          <p class="text-capitalize">copyright you website 2019</p>
+        </div>
 
       </div>
     </div>
